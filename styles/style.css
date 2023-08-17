@@ -11,19 +11,18 @@
   text-decoration: none;
 }
 
+
 body {
     font-family: 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
 }
 
-.container {
-    max-width: 1084px;
-    min-height: 100vh;
-    margin: 0 auto;
+.body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;     
 }
 
-.container > * {
+.body > * {
     margin: 0 auto;
 }
 
@@ -34,7 +33,10 @@ body {
     flex-direction: column;
     width: 100%;
     padding: 5px 0 33px;
+    max-width: 1200px;
 }
+
+/* Top-header */
 
 .header_top-header {
     display: grid;
@@ -67,6 +69,7 @@ body {
     justify-content: space-between;
 }
 
+/* Bottom-header */
 
 .header_bottom-header {
     display: grid;
@@ -143,29 +146,89 @@ button {
 /* ------- Main ------- */
 
 .main-container {
-    min-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 0;
-    
+    width: 100%;
 }
 
 /* Video */
 
+.video-section {
+    width: 100%;
+}
+.video-section_container {
+    display: flex;
+    padding: 0px max(15px, (100% - 1200px) / 2) 0px 0;
+    position: relative;
+}
 
+.video-section_video-block {
+    min-height: 750px;
+    max-height: 750px;
+    overflow: hidden;
+    z-index: 1;
+}
 
+.video-section_video-content {
+    margin-left: -100px;
+    max-width: 575px;
+    min-width: 575px;
+    z-index: 2;
+    position: relative;
+}
+
+.video-section_bg-gradiant {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    z-index: 1;
+    background-image: linear-gradient(270deg, #FFFFFF 2.49%, rgba(255, 255, 255, 0) 85.87%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-content_info {
+    position: relative;
+}
+
+.video-content_info-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 
 /* Slider */
+.slider-section {
+    width: 100%;
+}
+
 .swiper {
     margin-top: 60px;
-    max-width: 1084px;
+    display: flex;
 }
 
 .slider-container {
     min-height: 100%;
+    flex: 0.1;
+}
+
+.slider_slide {
+    width: 100%;
+}
+
+.swiper-button-next {
+    margin-right: 60px;
+}
+
+.swiper-button-prev {
+    margin-left: 60px;
 }
 
 .slider_slide_image {
