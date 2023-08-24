@@ -16,15 +16,16 @@
     <title>Массажная студия</title> 
 </head>
 <body class="body">
-        <header class="header">
-            <div class="header_top-header">
+    <header class="header">
+        <div class="header-fixed">
+            <div class="header_top-header" id="topHeader">
                 <div class="switcher-container">
                     <div class="switcher">
                         <img src="https://dummyimage.com/35/000000/fff.png" alt="">
                     </div>
                 </div>
                 <div class="location">
-                    <a href="" class="location_map-address">Где мы находимся?</a>
+                    <a href="#map" class="location_map-address">Где мы находимся?</a>
                 </div>
                 <div class="number-container">
                     <a href="tel:+79102004942">8 910 200 49 42</a>
@@ -42,174 +43,179 @@
                     <div class="void-container"></div>
                 </div>
             </div>
-            <div class="header_bottom-header">
-                <div class="bottom-header_button">
-                    <a href="" class="bottom-header_button_link button">Купить сертификат</a>
+        </div>
+        <div class="header_bottom-header">
+            <div class="bottom-header_button">
+                <a href="" class="bottom-header_button_link button">Купить сертификат</a>
+            </div>
+            <div class="bottom-header_middle">
+                <div class="bottom-header_middle_logo">
+                    <a href=""><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
                 </div>
-                <div class="bottom-header_middle">
-                    <div class="bottom-header_middle_logo">
-                        <a href=""><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
-                    </div>
-                    <nav class="navigation">
-                        <ul class="navigation_list"> 
-                            <li class="navigation_element">
-                                <button class="menu-icon" id="menu-icon">
-                                    <span class="button-first button_element" id="button-first"></span>
-                                    <span class="button_element"></span>
-                                    <span class="button-third button_element" id="button-third"></span> 
-                                </button>
-                            </li>
-                            <li class="navigation_element">Сертефикаты</li>
-                            <li class="navigation_element">Акции</li>
-                            <li class="navigation_element">Услуги</li>
-                            <li class="navigation_element">О нас</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="bottom-header_button">
-                    <a href="" class="bottom-header_button_link button">Онлайн запись</a>
+                <nav class="navigation">
+                    <ul class="navigation_list"> 
+                        <li class="navigation_element">
+                            <button class="menu-icon" id="menu-icon">
+                                <span class="button-first button_element" id="button-first"></span>
+                                <span class="button_element"></span>
+                                <span class="button-third button_element" id="button-third"></span> 
+                            </button>
+                        </li>
+                        <li class="navigation_element">Сертефикаты</li>
+                        <li class="navigation_element">Акции</li>
+                        <li class="navigation_element">Услуги</li>
+                        <li class="navigation_element">О нас</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bottom-header_button">
+                <a href="" class="bottom-header_button_link button">Онлайн запись</a>
+            </div>
+        </div>
+    </header>
+    <section class="menu" id="menu">
+        <div class="menu-container">
+            <div class="menu_container" id="menu-container">
+                <div class="menu_menu">
+                        
                 </div>
             </div>
-        </header>
-        <section class="menu" id="menu">
-            <div class="menu-container">
-                <div class="menu_container" id="menu-container">
-                    <div class="menu_menu">
-                        
+        </div>
+    </section>
+    <main class="main-container">
+        <section class="video-section">  
+            <div class="video-section_container">
+                <div class="video-section_video-block">
+                    <video src="./images/pexels_videos_1998560 (1080p).mp4" autoplay="autoplay" type="video/mp4" class="video" loop muted poster></video>
+                </div>
+                <div class="video-section_video-content">
+                    <div class="video-section_bg-gradiant"></div>
+                    <div class="video-content_info">
+                        <div class="video-content_info-absolute">
+                            <h1 class="video-content_title">
+                                Название    
+                                <span>Краткое описание</span>
+                            </h1>
+                            <div class="video-content_text">
+                                <p>
+                                    Мы встречаем гостей жестом Вай – две сложенные руки и поклон – это означает, что мы приветствуем Вас и желаем здоровья! 
+                                    В салонах Вай Тай вас ждет первоклассный тайский массаж, уютные интерьеры, высокий уровень сервиса и наша сердечная забота. 
+                                    Мы хотим, чтобы практика тайского массажа вошла в Вашу жизнь, прекрасно преобразив ее." Позвольте себе и близким отдохнуть от шумного города — "
+                                    <span class="color-gold">запишитесь онлайн </span>
+						            или купите 
+                                    <span class="color-gold">подарочный сертификат</span>
+                                    .
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <main class="main-container">
-            <section class="video-section">  
-                <div class="video-section_container">
-                    <div class="video-section_video-block">
-                        <video src="./images/pexels_videos_1998560 (1080p).mp4" autoplay="autoplay" type="video/mp4" class="video" loop muted poster></video>
+        <section class="slider-section">
+            <div class="slider-container swiper">   
+                <div class="slider_wrapper swiper-wrapper">
+                    <div class="slider_slide swiper-slide">
+                        <div class="slider_slide_image">
+                            <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
+                        </div>
                     </div>
-                    <div class="video-section_video-content">
-                        <div class="video-section_bg-gradiant"></div>
-                        <div class="video-content_info">
-                            <div class="video-content_info-absolute">
-                                <h1 class="video-content_title">
-                                    Название    
-                                    <span>Краткое описание</span>
-                                </h1>
-                                <div class="video-content_text">
-                                    <p>
-                                        Мы встречаем гостей жестом Вай – две сложенные руки и поклон – это означает, что мы приветствуем Вас и желаем здоровья! 
-                                        В салонах Вай Тай вас ждет первоклассный тайский массаж, уютные интерьеры, высокий уровень сервиса и наша сердечная забота. 
-                                        Мы хотим, чтобы практика тайского массажа вошла в Вашу жизнь, прекрасно преобразив ее." Позвольте себе и близким отдохнуть от шумного города — "
-                                        <span class="color-gold">запишитесь онлайн </span>
-						                или купите 
-                                        <span class="color-gold">подарочный сертификат</span>
-                                        .
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="slider_slide swiper-slide">
+                        <div class="slider_slide_image">
+                            <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider_slide swiper-slide">
+                        <div class="slider_slide_image">
+                            <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider_slide swiper-slide">
+                        <div class="slider_slide_image">
+                            <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="slider-section">
-                <div class="slider-container swiper">   
-                    <div class="slider_wrapper swiper-wrapper">
-                        <div class="slider_slide swiper-slide">
-                            <div class="slider_slide_image">
-                                <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section-services">
+            <div class="services-container">
+                <div class="services_element-container-flex">
+                    <a class="services_element_link-container" href="./pages/massage.html">
+                        <div class="services_element-container">
+                            <div class="services_element_bg-image-container">
+                                <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
                             </div>
+                            <div class="services_element_info"><h1>Массаж 1</h1></div>
                         </div>
-                        <div class="slider_slide swiper-slide">
-                            <div class="slider_slide_image">
-                                <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_slide swiper-slide">
-                            <div class="slider_slide_image">
-                                <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_slide swiper-slide">
-                            <div class="slider_slide_image">
-                                <img  src="https://dummyimage.com/4000x600//fff.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    </a>
                 </div>
-            </section>
-            <section class="section-services">
-                <div class="services-container">
-                    <div class="services_element-container-flex">
-                        <a class="services_element_link-container" href="./1.html">
-                            <div class="services_element-container">
-                                <div class="services_element_bg-image-container">
-                                    <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
-                                </div>
-                                <div class="services_element_info"><h1>Название услуги</h1></div>
+                <div class="services_element-container-flex">
+                    <a class="services_element_link-container" href="./pages/massage copy.html">
+                        <div class="services_element-container">
+                            <div class="services_element_bg-image-container">
+                                <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
                             </div>
-                        </a>
-                    </div>
-                    <div class="services_element-container-flex">
-                        <a class="services_element_link-container" href="./1.html">
-                            <div class="services_element-container">
-                                <div class="services_element_bg-image-container">
-                                    <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
-                                </div>
-                                <div class="services_element_info"><h1>Название услуги</h1></div>
+                            <div class="services_element_info"><h1>Массаж 2</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="services_element-container-flex">
+                    <a class="services_element_link-container" href="./pages/massage copy 2.html">
+                        <div class="services_element-container">
+                            <div class="services_element_bg-image-container">
+                                <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
                             </div>
-                        </a>
-                    </div>
-                    <div class="services_element-container-flex">
-                        <a class="services_element_link-container" href="./1.html">
-                            <div class="services_element-container">
-                                <div class="services_element_bg-image-container">
-                                    <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
-                                </div>
-                                <div class="services_element_info"><h1>Название услуги</h1></div>
+                            <div class="services_element_info"><h1>Массаж 3</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="services_element-container-flex">
+                    <a class="services_element_link-container" href="./pages/massage copy 3.html">
+                        <div class="services_element-container">
+                            <div class="services_element_bg-image-container">
+                                <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
                             </div>
-                        </a>
-                    </div>
-                    <div class="services_element-container-flex">
-                        <a class="services_element_link-container" href="./1.html">
-                            <div class="services_element-container">
-                                <div class="services_element_bg-image-container">
-                                    <img src="https://dummyimage.com/500x400//fff.png" alt="" class="services_element_bg-image">
-                                </div>
-                                <div class="services_element_info"><h1>Название услуги</h1></div>
-                            </div>
-                        </a>
+                            <div class="services_element_info"><h1>Массаж 4</h1></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="location-section">
+            <div class="location-container">
+                <div class="location_info-container">
+                    <div class="location_info-container_content">
+                        <div class="info-content_title info-content_element">
+                            <h1>Адрес салона</h1>
+                        </div>
+                        <div class="info-content_address info-content_element">
+                            <div class="info-content_address_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>г. Москва, Цветной бульвар, 26 стр. 1</span>
+                        </div>
+                        <div class="info-content_admission-rules info-content_element">
+                            <div class="info-content_admission-rules_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>Прием по предварительной записи</span>
+                        </div>
+                        <div class="info-content_reception-time info-content_element">
+                            <div class="info-content_reception-time_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>Ежедневно с 10:00 до 22:00</span>
+                        </div>
+                        <div class="info-content_number info-content_element">
+                            <div class="info-content_number_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>+7 (965) 142-97-30</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="location-section">
-                <div class="location-container">
-                    <div class="location_info-container">
-                        <div class="location_info-container_content">
-                            <div class="info-content_title info-content_element">
-                                <h1>Адрес салона</h1>
-                            </div>
-                            <div class="info-content_address info-content_element">
-                                <div class="info-content_address_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>г. Москва, Цветной бульвар, 26 стр. 1</span>
-                            </div>
-                            <div class="info-content_admission-rules info-content_element">
-                                <div class="info-content_admission-rules_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>Прием по предварительной записи</span>
-                            </div>
-                            <div class="info-content_reception-time info-content_element">
-                                <div class="info-content_reception-time_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>Ежедневно с 10:00 до 22:00</span>
-                            </div>
-                            <div class="info-content_number info-content_element">
-                                <div class="info-content_number_image info-content_image"><img src="https://dummyimage.com/25//fff.png" alt=""></div><span>+7 (965) 142-97-30</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map" id="map"></div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer-container">
-            It's footer
-        </footer>
-    <script src="./scripts/script.js"></script>
+                <div class="map" id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        It's footer
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./scripts/menuScript.js"></script>
+    <script src="./scripts/sliderScript.js"></script>
+    <script src="./scripts/ymapsScript.js"></script>
+    <script src="./scripts/headerScript.js"></script>
 </body>
 </html>
