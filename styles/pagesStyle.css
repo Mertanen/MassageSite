@@ -66,6 +66,10 @@ a:active, a:hover, a:focus, a:visited {
     width: 100%;
 }
 
+.header-fixed {
+    width: 100%;
+}
+
 .header-fixed.active {
     width: 100%;
     position: fixed;
@@ -92,8 +96,12 @@ a:active, a:hover, a:focus, a:visited {
     width: 100%;
 }
 
+.location-image {
+    text-align: center;
+}
+
 .location  a {
-    padding-left: 25px; 
+    padding-left: 5px; 
 }
 
 .number-container {
@@ -114,6 +122,17 @@ a:active, a:hover, a:focus, a:visited {
 
 .social-info_element {
     padding-left: 5px;
+}
+
+#avito-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#location-image {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -252,6 +271,11 @@ button {
 
 /* Services */
 
+.services_title {
+    text-align: center;
+    padding-top: 80px;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -259,6 +283,7 @@ button {
     max-width: 1200px;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
 }
 
 .services_element-container-flex {
@@ -278,8 +303,13 @@ button {
     width: 100%;
 }
 
+.services_element_bg-image-container img {
+    border-radius: 20px;
+}
+
 .services_element_info {
     position: absolute;
+    border-radius: 10px;
     z-index: 1;
     right: 0;
     left: 0;
@@ -295,6 +325,77 @@ button {
 .services_element_info h1 {
     margin-top: 25px;
 }
+
+
+/* Location */
+.location-section {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.location-container > * {
+    flex: 1;
+}
+
+.map {
+    width: 500px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.location_info-container {
+    padding-left: 5em;
+}
+
+.location_info-container_content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info-content_element {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.info-content_image {
+    padding-right: 0.5em;
+}
+
+
+.balloon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.balloon_element {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.balloon_element img {
+    margin-right: 10px;
+}
+
+[class*="ymaps-2-1"][class*="-ground-pane"] {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+
 
 /* ------- Footer --------*/
 

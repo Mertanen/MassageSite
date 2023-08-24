@@ -12,7 +12,7 @@ function init() {
 
   let placemark = new ymaps.Placemark(centerOfPlacemark, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../images/placemark.png',
+    iconImageHref: '../images/location/placemark.png',
     iconImageSize: [40, 40]
   });
 
