@@ -11,6 +11,36 @@
   text-decoration: none;
 }
 
+:root {
+    --nav-active-color: rgb(255, 255, 255);
+    --nav-active-bg-color: rgb(58, 58, 58);
+    --breadcrumbs-color: rgb(179, 179, 179);
+    --breadcrumbs-color-hover: rgb(0, 0, 0);
+    --gradient: linear-gradient(270deg, #AD1078 0%, #5B2975 100%);
+    --button-gradient-color: rgb(255, 255, 255);
+    --button-active-gradient-bg-color: rgb(255, 255, 255);
+    --button-active-gradient-color: rgb(0, 0, 0);
+    --color-text: rgb(78, 78, 78);
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: 
+        url('../Fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+        url('../Fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../Fonts/Gilroy/Gilroy-Regular.eot') format('eot'),
+        url('../Fonts/Gilroy/Gilroy-Regular.ttf') format('ttf');     
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: 
+        url('../fonts/GilroyBold/Gilroy-Black.woff') format('woff'),
+        url('../fonts/GilroyBold/Gilroy-Black.woff2') format('woff2'),
+        url('../fonts/GilroyBold/Gilroy-Black.eot') format('eot'),
+        url('../fonts/GilroyBold/Gilroy-Black.ttf') format('ttf');
+}
+
 @keyframes headerAnim {
     0% {
         transform: translate3d(0, -100%, 0);
@@ -21,39 +51,67 @@
     };
 }
 
-@font-face {
-    font-family: 'Gilroy';
-    src: 
-        url('../Fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
-        url('../Fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
-        url('../Fonts/Gilroy/Gilroy-Regular.eot') format('eot'),
-        url('../Fonts/Gilroy/Gilroy-Regular.ttf') format('ttf');
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
 body {
     font-family: 'Gilroy', 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
+    font-family: "Gilroy", sans-serif;
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
 }
 
 .body {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;   
+    overflow-x: hidden; 
+    font-size: 16px;  
 }
 
 .body > * {
     margin: 0 auto;
 }
 
-
-a ,a:active, a:hover, a:focus, a:visited {
+a, a:active, a:hover, a:focus, a:visited {
     text-decoration: none;
     color: initial;
 }
+
+button {
+    cursor: pointer;
+}
+
+.title1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'GilroyBold';
+    letter-spacing: 0.01em;
+}
+
+.title2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'GilroyBold';
+    letter-spacing: 0.05em;
+}
+
+.title3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'GilroyBold';
+    letter-spacing: 0.025em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 
 /* -------- Header --------- */
 
@@ -163,8 +221,9 @@ a ,a:active, a:hover, a:focus, a:visited {
     align-items: center;
 }
 
-.bottom-header_middle img {
-    padding-bottom: 20px;
+.bottom-header_middle_logo {
+    position: relative;
+    height: 100px;
 }
 
 
@@ -229,11 +288,18 @@ a ,a:active, a:hover, a:focus, a:visited {
 
 .navigation {
     width: 60%;
+    padding-top: 20px;
 }
 
 ul {
     list-style-type: none;
 }
+
+.nav_unit a:hover{
+    color: aliceblue;
+    transition: all 0.5s linear;
+}
+
 
 .navigation_list {
     display: flex;
@@ -458,7 +524,7 @@ button {
     max-width: 1200px;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 3em;
 }
 
 .services_element-container-flex {
@@ -534,11 +600,17 @@ button {
     flex-direction: column;
 }
 
+.location_image {
+    height: 25px;
+    width: 25px;
+}
+
 
 .info-content_element {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1em;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
 .info-content_image {
