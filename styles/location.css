@@ -1,0 +1,74 @@
+/* Location */
+.location-section {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.location-container > * {
+    flex: 1;
+}
+
+.map {
+    width: 500px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.location_info-container {
+    padding-left: 5em;
+}
+
+.location_info-container_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.location_image {
+    height: 25px;
+    width: 25px;
+}
+
+
+.info-content_element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.info-content_image {
+    padding-right: 0.5em;
+}
+
+
+.balloon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.balloon_element {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.balloon_element img {
+    margin-right: 10px;
+}
+
+[class*="ymaps-2-1"][class*="-ground-pane"] {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
