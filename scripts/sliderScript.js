@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
     },
     
     autoplay: {
-        delay: 3000,
+        delay: 2500,
     },
 
     speed: 900,

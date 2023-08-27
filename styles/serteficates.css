@@ -1,0 +1,259 @@
+/* ------ Serteficates ------- */
+.serteficates-container {
+    max-width: 1200px;
+}
+
+.serteficate-container > * {
+    width: 100%;
+}
+
+
+
+/* -- Serteficates title -- */
+
+.serteficates_title {
+    display: flex;
+    width: 100%;
+    height: 480px;
+    background: url('../images/serteficates/serteficates-bg-image.png');
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.serteficates_title_center_image {
+    padding-bottom: 10px;
+}
+
+.serteficates_title_center_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 300;
+    color: white;
+}
+
+/* -- Serteficates description -- */
+
+.serteficates_description {
+    background-color: rgb(126, 187, 223);
+    border-radius: 20px;
+}
+
+
+.serteficates_title_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    width: 50%;
+    background: transparent;
+}
+
+.serteficates_description_center {
+    width: 60%;
+    margin: 4em auto;
+}
+
+.serteficates_description_center_description {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 40px;
+}
+
+/*  ----- Serteficates money ----- */
+
+.serteficates_money_unit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Serteficates money unit */ 
+
+.serteficates_money_unit {
+    position: relative;
+    padding: 1px;
+    width: fit-content;
+    background: rgb(253, 183, 183) ;
+    border-radius: 20px;
+    --border-width: 2px;
+}
+
+.serteficates_money_unit::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 20px;
+    animation: moveGradient 4s alternate infinite;
+}
+
+.serteficates_money_unit_inner {
+    width: fit-content;
+}
+
+.sertificates_title {
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    margin: 3em 0;
+}
+
+.sertificates_title_title {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.serteficates_money_unit_image img {
+    border-radius: 20px;
+}
+
+.serteficates_money_unit_description_price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+/*  --- Serteficates abonements --- */
+
+/* -- Sertefications abonements title */
+.serteficates_abonement_title {
+    margin: 4em auto;
+}
+
+/* - Sertefications abonement list - */
+
+.serteficates_abonement_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.serteficates_abonement_list :first-child {
+    border-radius: 10px 0 0 10px !important; 
+}
+
+.serteficates_abonement_list :last-child {
+    border-right: 1px solid var(--color-border);
+    border-radius: 0 10px 10px 0 !important; 
+}
+
+.abonement_list_button {
+    padding: 1.2em 0;
+    width: 100%;
+    border-radius: 0px !important;
+    border: 1px solid var(--color-border);
+    border-right: none;
+}
+
+.abonement_list_button.active {
+    color: var(--button-gradient-color);
+    background: var(--nav-active-bg-color)
+}
+
+/* -- Sertefications abonement services -- */
+
+.serteficates_abonement_services {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.abonement_services_discription.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0.5em;
+    gap: 20px;
+}
+
+.abonement_services_discription {
+    display: none;
+}
+
+.abonement_services_image {
+    display: none;
+}
+
+.abonement_services_image.active {
+    display: block;
+}
+
+.abonement_services_discription_title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.abonement_services_discription_abonements_list li{
+    padding: 1.5em 2em;
+    border: 1px solid var(--color-border);
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+
+.abonement_services_discription_abonements_list li span {
+    font-weight: 900;
+}
+
+/* Serteficates advantages */
+
+.serteficates_advantages-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #5ff2f0;
+}
+
+.advantages_unit {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 4em 3em;
+}
+
+.advantages_unit > * {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.advantages_unit_image {
+    padding-bottom: 2em;
+}
+
+.advantages_unit_description {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.advantages_unit_description_title {
+    text-transform: uppercase;
+    font-size: 25px;
+}

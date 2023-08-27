@@ -37,5 +37,5 @@
   
 .crumbs_nav li a:hover {
     color: var(--breadcrumbs-color-hover);
-    transition: 0.75s ease-in-out;
+    transition: 0.5s ease-in-out;
 }

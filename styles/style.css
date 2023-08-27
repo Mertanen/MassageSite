@@ -9,6 +9,7 @@
   font-size: inherit;
   font-family: inherit;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -21,6 +22,9 @@
     --button-active-gradient-bg-color: rgb(255, 255, 255);
     --button-active-gradient-color: rgb(0, 0, 0);
     --color-text: rgb(78, 78, 78);
+    --list-prices-bg-color: rgb(255, 255, 255);
+    --list-prices-border-color: rgb(78, 78, 78);
+    --color-border: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -51,6 +55,12 @@
     };
 }
 
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+}
+
 body {
     font-family: 'Gilroy', 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
     font-family: "Gilroy", sans-serif;
@@ -64,7 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-size: 16px;   
+    font-size: 16px; 
 }
 
 .body > * {
@@ -86,6 +96,7 @@ button {
     line-height: 1;
     font-family: 'GilroyBold';
     letter-spacing: 0.01em;
+    text-align: center;
 }
 
 .title2 {
@@ -94,6 +105,7 @@ button {
     line-height: 1;
     font-family: 'GilroyBold';
     letter-spacing: 0.05em;
+    text-align: center;
 }
 
 .title3 {
@@ -101,7 +113,17 @@ button {
     font-weight: 400;
     line-height: 1;
     font-family: 'GilroyBold';
-    letter-spacing: 0.25em;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.title4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'GilroyBold';
+    letter-spacing: 0.025em;
+    text-align: center;
 }
 
 p {
@@ -113,7 +135,7 @@ p {
 }
 
 
-/* --------------------- */
+/* --------------------- */ 
 body {
     background-color: rgb(184, 184, 184);
 }

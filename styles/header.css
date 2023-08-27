@@ -46,8 +46,23 @@
     text-align: center;
 }
 
-.location  a {
-    padding-left: 5px; 
+.location button {
+    background: inherit;
+    transition: 0.3s ease-in-out;
+    padding: 2px;
+}
+
+.location button:hover {
+    background: rgb(85, 53, 72);
+    border-radius: 10px;
+}
+
+.location button:hover a {
+    color: white;
+}
+
+.location a {
+    padding-left: 5px;
 }
 
 .number-container {
@@ -181,7 +196,7 @@ ul {
 
 .nav_unit a:hover{
     color: var(--nav-active-color);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
 }
 
 .nav_unit.active a{
@@ -233,7 +248,6 @@ ul {
 #button-third-active {
     width: 100%;
 }
-
 
 button {
     border: 0;
