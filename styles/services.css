@@ -2,7 +2,7 @@
 
 .services_title {
     text-align: center;
-    padding-top: 40px;
+    margin: 1.5em auto;
 }
 
 .services-container {
@@ -12,7 +12,6 @@
     max-width: 1200px;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
 }
 
 .services_element-container-flex {

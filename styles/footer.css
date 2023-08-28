@@ -1,5 +1,12 @@
 /* ------- Footer --------*/
 
 .footer-container {
-    height: 500px;
+    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -50,7 +50,7 @@
     align-items: center;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
     width: 50%;
     background: transparent;
 }
@@ -195,6 +195,10 @@
     display: none;
 }
 
+.abonement_services_image img {
+    border-radius: 20px;
+}
+
 .abonement_services_image.active {
     display: block;
 }
@@ -222,7 +226,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #5ff2f0;
+    background-color: #fdc1f0;
+    border-radius: 20px;
 }
 
 .advantages_unit {
@@ -241,19 +246,25 @@
 }
 
 .advantages_unit_image {
-    padding-bottom: 2em;
+    height: fit-content;
 }
 
 .advantages_unit_description {
     display: flex;
-    height: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 
 .advantages_unit_description_title {
     text-transform: uppercase;
     font-size: 25px;
+    padding-top: 2em;
+}
+
+.advantages_unit_description {
+    justify-content: flex-start;
+}
+
+.advantages_unit_description_description {
+    padding-top: 1em;
 }
