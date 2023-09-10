@@ -2,7 +2,7 @@
 
 .services_title {
     text-align: center;
-    margin: 1.5em auto;
+    margin: 1em auto 1em auto;
 }
 
 .services-container {
@@ -52,4 +52,14 @@
 
 .services_element_info h1 {
     margin-top: 25px;
+}
+
+@media screen and (width <= 480px) {
+    .services_element_bg-image-container img {
+        width: 360px;
+        height: 300px;
+    }
+    .services_element_info {
+        top: 117.5px;
+    }
 }

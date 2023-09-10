@@ -1,0 +1,64 @@
+.transition_unit_buttons {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0em auto 1.5em auto;
+}
+
+.transition_unit_buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.transition_unit_buttons_button.active {
+    padding: 0.75em 1.2em;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: var(--nav-active-bg-color);
+    color: var(--nav-active-color);
+    border: 1px solid inherit;
+}
+
+.transition_unit_buttons_button {
+    padding: 0.75em 1.2em;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: inherit;
+    color: var(--color-text);
+    border: 1px solid var(--nav-active-bg-color);
+    transition: 0.5s ease;
+}
+
+.transition_unit_buttons_button:hover {
+    background-color: var(--nav-active-bg-color);
+    color: var(--nav-active-color);
+    border: 1px solid inherit;
+}
+
+@media screen  and (width <= 1200px) {
+    .transition_unit_buttons {
+        max-width: 920px;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (width <= 1000px) {
+    .transition_unit_buttons {
+        max-width: 720px;
+    }
+}
+
+@media screen and (width <= 760px) {
+    .transition_unit_buttons {
+        max-width: 440px;
+    }
+    .transition_unit_buttons {
+        margin: 1em auto 1em auto;
+    }
+}
+
+@media screen and (width <= 480px) { 
+    .transition_unit_buttons-container {
+        padding-left: 0.5em;
+    }
+}

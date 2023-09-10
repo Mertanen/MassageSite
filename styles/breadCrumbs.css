@@ -38,3 +38,27 @@
     color: var(--breadcrumbs-color-hover);
     transition: 0.5s ease-in-out;
 }
+
+@media screen  and (width <= 1200px) {
+    .crumbs {
+        max-width: 960px;  
+    }
+}
+
+@media screen and (width <= 1000px) {
+    .crumbs {
+        max-width: 760px;  
+    }
+}
+
+@media screen and (width <= 760px) {
+    .crumbs {
+        display: none;
+    }
+}
+
+@media screen and (width <= 480px) {
+    .crumbs {
+        display: none;
+    }
+}

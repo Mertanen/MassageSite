@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/promotionunit.css">
+    <link rel="stylesheet" href="../styles/aboutus.css">
+    <link rel="stylesheet" href="../styles/location.css">
+    <link rel="stylesheet" href="../styles/record.css">
+    <link rel="stylesheet" href="../styles/transitionButton.css">
     <link rel="stylesheet" href="../styles/breadCrumbs.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <title>Массажная студия</title> 
@@ -22,26 +27,38 @@
             <div class="header_top-header" id="topHeader">
                 <div class="location-image-container">
                     <div class="location-image">
-                        <img src="../images/top-header/location-image.png" alt="" id="location-image">
+                        <a href="../index.html#location"><img src="../images/top-header/location.png" alt="" id="location-image"></a>
                     </div>
                 </div>
                 <div class="location">
-                    <button><a href="../index.html#map" class="location_map-address">Где мы находимся?</a></button>
+                    <button><a href="../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="location_short">
+                    <button><a href="../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="top-header_middle_logo">
+                    <a href="../index.html"><img src="https://dummyimage.com/90x60/000000/fff.png" alt=""></a>
                 </div>
                 <div class="number-container">
-                    <a href="tel:+79102004942"><img src="../images/location/phone.png" alt="">8 910 200-49-42</a>
+                    <a href="tel:+79102004942"><img src="../images/top-header/phone.png" alt=""><span>8 910 200-49-42</span></a>
                 </div>
                 <div class="social-info-container">
                     <div class="vk-info social-info_element">
-                        <a href="" target="_blank" id="vklink"><img src="../images/top-header/vk-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt=""></a>
                     </div>
                     <div class="whatsapp-info social-info_element">
-                        <a href="" target="_blank" id="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt=""></a>
                     </div>
                     <div class="avito-info social-info_element">
-                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" id="avitolink"><img src="../images/top-header/avito-image.png" alt="" id="avito-image"></a>
+                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" id="avito-image"></a>
                     </div>
-                    <div class="void-container"></div>
+                </div>
+                <div class="top-header_button_void">
+                    <button class="menu-icon" id="menu-icon-void">
+                        <span class="button-first button_element" id="button-first-void"></span>
+                        <span class="button_element"></span>
+                        <span class="button-third button_element" id="button-third-void"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -62,7 +79,7 @@
                 </div>
                 <nav class="navigation">
                     <ul class="navigation_list">    
-                        <li class="navigation_element">
+                        <li class="navigation_element" id="nav_button">
                             <button class="menu-icon" id="menu-icon">
                                 <span class="button-first button_element" id="button-first"></span>
                                 <span class="button_element"></span>
@@ -72,14 +89,14 @@
                         <li class="navigation_element nav_unit"><a href="./serteficates.html">Сертефикаты</a></li>
                         <li class="navigation_element nav_unit"><a href="./promotions.html">Акции</a></li>
                         <li class="navigation_element nav_unit"><a href="./services.html">Услуги</a></li>
-                        <li class="navigation_element nav_unit  active"><a href="./aboutus.html">О нас</a></li>
+                        <li class="navigation_element nav_unit active"><a href="#">О нас</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="bottom-header_button">
-                <a href="" class="bottom-header_button_link button">
+                <a href="#" class="bottom-header_button_link button">
                     <ul>
-                        <li class="button_container">
+                        <li class="button_container recordButton" id="recordButton">
                             Запись
                             <span></span><span></span><span></span><span></span>
                         </li>
@@ -88,29 +105,371 @@
             </div>
         </div>
     </header>
-    <section class="menu" id="menu">
+    <section class="menu menu_sticky" id="menu">
         <div class="menu-container">
             <div class="menu_container" id="menu-container">
                 <div class="menu_menu">
-                        
+                    <div class="menu_close-button-container">
+                        <button class="menu_close-button"><img src="../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+                    </div>
+                    <h1 class="menu_menu_main_title title2">Cтудия эстетики</h1>
+                    <div class="menu_serteficates menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./serteficates.html">Сертефикаты</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="./serteficates.html#money">Сертефикаты на сумму</a></li>
+                                <li class="menu_menu_list_element"><a href="./serteficates.html#abonements">Абонементы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_promotions menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./promotions.html">Акции</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_services menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./services.html">Услуги</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Массаж1</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж2</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж3</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_aboutus menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="#">О нас</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="#">Описание</a></li>
+                                <li class="menu_menu_list_element"><a href="#values">Ценности</a></li>
+                                <li class="menu_menu_list_element"><a href="#standarts">Стандарты</a></li>
+                                <li class="menu_menu_list_element"><a href="#jurInformation">Реквезиты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_menu_footer">
+                    <div class="menu_menu_footer_number"><a href="tel:+79102004942"><span>+7 910 200-49-42</span></a></div>
+                    <div class="menu_menu_footer_social-container">
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="record-container" id="recordContainer">
+        <div class="record_inner-container active" id="recordInnerContainer">
+            <div class="menu_close-button-container">
+                <button class="menu_close-button" id="closeButton"><img src="../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+            </div>
+            <div class="record_title">
+                <h1 class="title3">Запись на прием</h1>
+            </div>
+            <div class="record_description">
+                <div class="info-content_address info-content_element">
+                    <div class="info-content_address_image info-content_image"><img src="../images/location/location.png" alt="" class="location_image"></div><span>г. Москва, Цветной бульвар, 26 стр. 1</span>
+                </div>
+                <div class="info-content_admission-rules info-content_element">
+                    <div class="info-content_admission-rules_image info-content_image"><img src="../images/location/rule.png" alt="" class="location_image"></div><span>Прием по предварительной записи</span>
+                </div>
+                <div class="info-content_reception-time info-content_element">
+                    <div class="info-content_reception-time_image info-content_image"><img src="../images/location/time.svg" alt="" class="location_image"></div><span>Ежедневно с 10:00 до 22:00</span>
+                </div>
+                <div class="info-content_number info-content_element">
+                    <div class="info-content_number_image info-content_image"><img src="../images/location/phone.png" alt="" class="location_image"></div><span><a href="tel:+79102004942">+7 (965) 142-97-30</a></span>
+                </div>
+                <div class="record_social-list-container">
+                    <ul class="record_social-list">
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>VK:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Whatsapp:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Avito:</h2></div>
+                            <div class="social-list_element_descr"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <div class="crumbs">
             <ul class="crumbs_nav">
                 <li><a href="../index.html">Главная</a></li>
-                <li id="breadcrumbs_active">О нас</li>
+                <li id="breadcrumbs_active">Акции</li>
             </ul>
         </div>
+        <div class="transition_unit_buttons">
+            <div class="transition_unit_buttons-container">
+                <div><button class="transition_unit_buttons_button active">Описание</button></div>
+                <div><a href="#values"><button class="transition_unit_buttons_button">Ценности</button></a></div>
+                <div><a href="#standarts"><button class="transition_unit_buttons_button">Стандарты</button></a></div>
+                <div><a href="#jurInformation"><button class="transition_unit_buttons_button">Реквезиты</button></a></div>
+            </div>
+        </div>
+        <section class="aboutus-section">
+            <div class="aboutus-container">
+                <div class="aboutus_description">
+                    <h1 class="title2">Вай Тай — это сеть салонов тайского СПА с премиальным сервисом. 
+                        Мы собрали в нашей команде лучших профессионалов своего дела
+                    </h1>
+                    <p class="about-hero__text">				
+                        Первый салон сети Вай Тай был открыт в 9 октября 2010 года в самом сердце Москвы у метро Маяковская. Сегодня сеть Вай Тай насчитывает более 70 салонов по всей России и за ее пределами. <br>
+                        <br>
+                        С момента создания Вай Тай и по сей день в центре внимания находитесь вы – наши дорогие Гости. Совершенствуя сервис, обучая мастеров из Таиланда и разрабатывая новые программы - мы неустанно трудимся для вашего здоровья и отдыха. <br>
+                        <br>
+                        Мы искренне надеемся, что Вы оцените или просто почувствуете результат от десятков мелочей, которые мы воплощаем в жизнь, чтобы сделать Ваше пребывание максимально комфортным: улыбка администратора, имбирный чай, тонкие ароматы, горячий душ, свежайшие простыни. Таинство массажа: удар колокольчика говорит о том, что процедура началась, приглушенный свет, мягкие прикосновения рук, профессионализм и деликатность мастеров. А далее, неизменная легкость, желание жить и дышать полной грудью и, наконец, она - Ваша счастливая улыбка!
+                        <br>
+                        <br>
+                        Спасибо Вам, дорогие Гости, что делаете нас лучше
+                        <br>
+                        <br>
+                        Искренне Ваш, Вай Тай                       
+                    </p>
+                </div>
+                <div class="aboutus_values" id="values">
+                    <h1 class="title2 aboutus_main_title">Ценности</h1>
+                    <div class="aboutus_value-container">
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aboutus_unit">
+                            <div class="aboutus_unit_image-container">
+                                <img src="https://dummyimage.com/80/000000/fff.png" alt="">
+                            </div>
+                            <div class="aboutus_unit_description">
+                                <h1>Мы профессионалы</h1>
+                                <p>Начиная от встречи гостя, техники массажа в исполнении тайских мастеров и работы каждого сотрудника офиса – мы делаем свою работу хорошо.
+                                    А еще нам важно постоянно улучшать наш сервис, процессы, как и улучшать себя – только так можно сохранить доверие гостей и партнеров надолго
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="aboutus_standats" id="standarts">
+                    <div class="aboutus_standats_image">
+                        <img src="https://dummyimage.com/360/000000/fff.png" alt="">
+                    </div>
+                    <div class="aboutus_standats_description">
+                        <h2 class="title2">Стандарты качества</h2>
+                        <p>
+                            Коллектив каждого салона Вай Тай знает, что самые строгие требования предъявляем к себе мы сами. 
+                            В компании Вай Тай внедрена система контроля качества услуг «Золотой стандарт» в соответствии с которой каждый салон обязуется выполнять свод правил и ритуалов, направленный на достижение исключительного уровня Клиентского сервиса.
+                        </p>
+                        <p>
+                            Если вы считаете себя экспертом в области СПА – добро пожаловать в наш клуб независимых контроллеров. Мы предложим вам провести проверку салона на соответствие стандартам Вай Тай и выступить «таинственным покупателем» для выбранного салона.
+                        </p>
+                    </div>
+                </div>
+                <div class="jur-information-container" id="jurInformation">
+                    <h1 class="jur-information_title title2 aboutus_main_title">Общие реквизиты</h1>
+                    <ul class="jur-information_list">
+                        <li class="jur-information_item">
+                            <span class="jur-information_name color-white">Тип организации</span>
+                            <span class="jur-information_info">Общество с ограниченной ответственностью</span>
+                        </li>
+                        <li class="jur-information_item">
+                            <span class="jur-information_name color-white">Тип организации</span>
+                            <span class="jur-information_info">Общество с ограниченной ответственностью</span>
+                        </li>
+                        <li class="jur-information_item">
+                            <span class="jur-information_name color-white">Тип организации</span>
+                            <span class="jur-information_info">Общество с ограниченной ответственностью</span>
+                        </li>
+                        <li class="jur-information_item">
+                            <span class="jur-information_name color-white">Тип организации</span>
+                            <span class="jur-information_info">Общество с ограниченной ответственностью</span>
+                        </li>
+                        <li class="jur-information_item">
+                            <span class="jur-information_name color-white">Тип организации</span>
+                            <span class="jur-information_info">Общество с ограниченной ответственностью</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer-container">
-        It's footer
+    <footer class="footer">
+        <div class="footer-container_top">
+            <div class="header_bottom-header">
+                <div class="bottom-header_button">
+                    <a href="./serteficates.html" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container">
+                                Сертификат
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="bottom-header_middle" id="footerLogo">
+                    <div class="bottom-header_middle_logo">
+                        <a href="../index.html"><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottom-header_button">
+                    <a href="#" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container recordButton" id="recordButtonBot">
+                                Запись
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container_middle" id="socialContainer">
+            <div class="social-info-container">
+                <div class="vk-info social-info_element">
+                    <a href="" target="_blank" class="vklink"><img src="../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="whatsapp-info social-info_element">
+                    <a href="" target="_blank" class="whatsapplink"><img src="../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="avito-info social-info_element">
+                    <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                </div>
+                <div class="void-container"></div>
+            </div>
+        </div>
+        <div class="footer-container_bottom">
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list">
+                        <li class="footer_unit_list_list_element">
+                            <a href="tel://+79102004942"><img src="../images/footer/phone.png" alt="">+7 910 200-49-42</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="../index.html#map"><img src="../images/footer/location.png" alt="">г. Москва, Цветной бульвар, 26 стр. 1</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="" target="_blank" class="vklink"><img src="../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                            <a href="" target="_blank" class="whatsapplink"><img src="../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                            <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            Медицинская лицензия № ЛО-77-01-021237
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Студия эстетики "WO/MAN"</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                            <a href="./serteficates.html">Сертефикаты</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="./promotions.html">Акции</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="./services.html">Услуги</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="#">О нас</a>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                           
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="../scripts/menuScript.js"></script>
     <script src="../scripts/headerScript.js"></script>
-    <script src="./scripts/socailInfoScript.js"></script>
+    <script src="../scripts/socailInfoScript.js"></script>
+    <script src="../scripts/menuScript.js"></script>
+    <script src="../scripts/record.js"></script>
+    <script src="../scripts/dropdownMenu.js"></script>
 </body>
 </html>

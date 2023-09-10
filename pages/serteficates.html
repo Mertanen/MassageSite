@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/breadCrumbs.css">
     <link rel="stylesheet" href="../styles/serteficates.css">
+    <link rel="stylesheet" href="../styles/location.css">
+    <link rel="stylesheet" href="../styles/record.css">
     <link rel="stylesheet" href="../styles/servicesElements.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <title>Массажная студия</title> 
@@ -24,26 +26,38 @@
             <div class="header_top-header" id="topHeader">
                 <div class="location-image-container">
                     <div class="location-image">
-                        <img src="../images/top-header/location-image.png" alt="" id="location-image">
+                        <a href="../index.html#location"><img src="../images/top-header/location.png" alt="" id="location-image"></a>
                     </div>
                 </div>
                 <div class="location">
-                    <button><a href="../index.html#map" class="location_map-address">Где мы находимся?</a></button>
+                    <button><a href="../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="location_short">
+                    <button><a href="../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="top-header_middle_logo">
+                    <a href="../index.html"><img src="https://dummyimage.com/90x60/000000/fff.png" alt=""></a>
                 </div>
                 <div class="number-container">
-                    <a href="tel:+79102004942"><img src="../images/location/phone.png" alt="">8 910 200-49-42</a>
+                    <a href="tel:+79102004942"><img src="../images/top-header/phone.png" alt=""><span>8 910 200-49-42</span></a>
                 </div>
                 <div class="social-info-container">
                     <div class="vk-info social-info_element">
-                        <a href="" target="_blank" id="vklink"><img src="../images/top-header/vk-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt=""></a>
                     </div>
                     <div class="whatsapp-info social-info_element">
-                        <a href="" target="_blank" id="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt=""></a>
                     </div>
                     <div class="avito-info social-info_element">
-                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" id="avitolink"><img src="../images/top-header/avito-image.png" alt="" id="avito-image"></a>
+                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" id="avito-image"></a>
                     </div>
-                    <div class="void-container"></div>
+                </div>
+                <div class="top-header_button_void">
+                    <button class="menu-icon" id="menu-icon-void">
+                        <span class="button-first button_element" id="button-first-void"></span>
+                        <span class="button_element"></span>
+                        <span class="button-third button_element" id="button-third-void"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -64,24 +78,24 @@
                 </div>
                 <nav class="navigation">
                     <ul class="navigation_list">    
-                        <li class="navigation_element">
+                        <li class="navigation_element" id="nav_button">
                             <button class="menu-icon" id="menu-icon">
                                 <span class="button-first button_element" id="button-first"></span>
                                 <span class="button_element"></span>
                                 <span class="button-third button_element" id="button-third"></span> 
                             </button>
                         </li>
-                        <li class="navigation_element nav_unit active"><a href="./serteficates.html">Сертефикаты</a></li>
-                        <li class="navigation_element nav_unit"><a href="./promotions.html">Акции</a></li>
-                        <li class="navigation_element nav_unit"><a href="./services.html">Услуги</a></li>
-                        <li class="navigation_element nav_unit"><a href="./aboutus.html">О нас</a></li>
+                        <li class="navigation_element nav_unit active"><a href="#">Сертефикаты</a></li>
+                        <li class="navigation_element nav_unit"><a href="../pages/promotions.html">Акции</a></li>
+                        <li class="navigation_element nav_unit"><a href="../pages/services.html">Услуги</a></li>
+                        <li class="navigation_element nav_unit"><a href="../pages/aboutus.html">О нас</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="bottom-header_button">
-                <a href="" class="bottom-header_button_link button">
+                <a href="#" class="bottom-header_button_link button">
                     <ul>
-                        <li class="button_container">
+                        <li class="button_container recordButton" id="recordButton">
                             Запись
                             <span></span><span></span><span></span><span></span>
                         </li>
@@ -90,15 +104,107 @@
             </div>
         </div>
     </header>
-    <section class="menu" id="menu">
+    <section class="menu menu_sticky" id="menu">
         <div class="menu-container">
             <div class="menu_container" id="menu-container">
                 <div class="menu_menu">
-                        
+                    <div class="menu_close-button-container">
+                        <button class="menu_close-button"><img src="../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+                    </div>
+                    <h1 class="menu_menu_main_title title2">Cтудия эстетики</h1>
+                    <div class="menu_serteficates menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="#">Сертефикаты</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="#money">Сертефикаты на сумму</a></li>
+                                <li class="menu_menu_list_element"><a href="#abonements">Абонементы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_promotions menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./promotions.html">Акции</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_services menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./services.html">Услуги</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Массаж1</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж2</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж3</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_aboutus menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="./aboutus.html">О нас</a></div><div class="menu_unit_img-container"><img src="../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="./aboutus.html">Описание</a></li>
+                                <li class="menu_menu_list_element"><a href="./aboutus.html#values">Ценности</a></li>
+                                <li class="menu_menu_list_element"><a href="./aboutus.html#standarts">Стандарты</a></li>
+                                <li class="menu_menu_list_element"><a href="./aboutus.html#jurInformation">Реквезиты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_menu_footer">
+                    <div class="menu_menu_footer_number"><a href="tel:+79102004942"><span>+7 910 200-49-42</span></a></div>
+                    <div class="menu_menu_footer_social-container">
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="record-container" id="recordContainer">
+        <div class="record_inner-container active" id="recordInnerContainer">
+            <div class="menu_close-button-container">
+                <button class="menu_close-button" id="closeButton"><img src="../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+            </div>
+            <div class="record_title">
+                <h1 class="title3">Запись на прием</h1>
+            </div>
+            <div class="record_description">
+                <div class="info-content_address info-content_element">
+                    <div class="info-content_address_image info-content_image"><img src="../images/location/location.png" alt="" class="location_image"></div><span>г. Москва, Цветной бульвар, 26 стр. 1</span>
+                </div>
+                <div class="info-content_admission-rules info-content_element">
+                    <div class="info-content_admission-rules_image info-content_image"><img src="../images/location/rule.png" alt="" class="location_image"></div><span>Прием по предварительной записи</span>
+                </div>
+                <div class="info-content_reception-time info-content_element">
+                    <div class="info-content_reception-time_image info-content_image"><img src="../images/location/time.svg" alt="" class="location_image"></div><span>Ежедневно с 10:00 до 22:00</span>
+                </div>
+                <div class="info-content_number info-content_element">
+                    <div class="info-content_number_image info-content_image"><img src="../images/location/phone.png" alt="" class="location_image"></div><span><a href="tel:+79102004942">+7 (965) 142-97-30</a></span>
+                </div>
+                <div class="record_social-list-container">
+                    <ul class="record_social-list">
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>VK:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="vklink"><img src="../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Whatsapp:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="whatsapplink"><img src="../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Avito:</h2></div>
+                            <div class="social-list_element_descr"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <div class="crumbs">
             <ul class="crumbs_nav">
@@ -124,7 +230,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="serteficates_money">
+                <div class="serteficates_money" id="money">
                     <div class="serteficates_money_title sertificates_title">
                         <h2 class="serteficates_money_title_title sertificates_title_title">Сертефикаты на сумму</h2>
                     </div>
@@ -180,28 +286,28 @@
                     </div>
                 </div>
                 <div class="serteficates_abonement">
-                    <div class="serteficates_abonement_title sertificates_title">
+                    <div class="serteficates_abonement_title sertificates_title" id="abonements">
                         <h2 class="serteficates_abonement_title_title sertificates_title_title">Абонементы</h2>
                     </div>
                     <div class="serteficates_abonement_list">
-                        <button class="unit_button unit_button_description abonement_list_button active" id="abonement_button_element_1">
-                            Подробнее
+                        <button class="unit_button unit_button_description abonement_list_button element_1 active" id="abutton1">
+                            <span>Подробнее</span>
                         </button>
-                        <button class="unit_button unit_button_description abonement_list_button" id="abonement_button_element_2">
-                            Подробнее
+                        <button class="unit_button unit_button_description abonement_list_button element_2" id="abutton2">
+                            <span>Подробнее</span>
                         </button>
-                        <button class="unit_button unit_button_description abonement_list_button" id="abonement_button_element_3">
-                            Подробнее
+                        <button class="unit_button unit_button_description abonement_list_button element_3" id="abutton3">
+                            <span>Подробнее</span>
                         </button>
-                        <button class="unit_button unit_button_description abonement_list_button" id="abonement_button_element_4">
-                            Подробнее
+                        <button class="unit_button unit_button_description abonement_list_button element_4" id="abutton4">
+                            <span>Подробнее</span>
                         </button>
                     </div>
                     <div class="serteficates_abonement_services">
-                        <div class="abonement_services_image active abonement_element_1" id="elem1Image">
+                        <div class="abonement_services_image active element_1" id="elem1Image">
                             <img src="https://dummyimage.com/460x320/ffffff/000000" alt="">
                         </div>
-                        <div class="abonement_services_discription active abonement_element_1" id="elem1Desc">
+                        <div class="abonement_services_discription active element_1" id="elem1Desc">
                             <div class="abonement_services_discription_title">
                                 <h2 class="abonement_services_discription_title_title">Массаж тела</h2>
                             </div>
@@ -213,10 +319,10 @@
                             </div>
                         </div>
 
-                        <div class="abonement_services_image abonement_element_2" id="elem2Image">
+                        <div class="abonement_services_image element_2" id="elem2Image">
                             <img src="https://dummyimage.com/460x320/ffffff/000000" alt="">
                         </div>
-                        <div class="abonement_services_discription abonement_element_2" id="elem2Desc">
+                        <div class="abonement_services_discription element_2" id="elem2Desc">
                             <div class="abonement_services_discription_title">
                                 <h2 class="abonement_services_discription_title_title">Массаж тела</h2>
                             </div>
@@ -224,14 +330,15 @@
                                 <ul class="abonement_services_discription_abonements_list">
                                     <li><span>5</span> процедур - скидка <span>7%</span> - срок <span>4</span> месяца</li>
                                     <li><span>5</span> процедур - скидка <span>7%</span> - срок <span>4</span> месяца</li>
+                                    <li><span>5</span> процедур - скидка <span>7%</span> - срок <span>4</span> месяца</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="abonement_services_image abonement_element_3" id="elem3Image">
+                        <div class="abonement_services_image element_3" id="elem3Image">
                             <img src="https://dummyimage.com/460x320/ffffff/000000" alt="">
                         </div>
-                        <div class="abonement_services_discription abonement_element_3" id="elem3Desc">
+                        <div class="abonement_services_discription element_3" id="elem3Desc">
                             <div class="abonement_services_discription_title">
                                 <h2 class="abonement_services_discription_title_title">Массаж тела</h2>
                             </div>
@@ -243,16 +350,17 @@
                             </div>
                         </div>
 
-                        <div class="abonement_services_image abonement_element_4" id="elem4Image">
+                        <div class="abonement_services_image element_4" id="elem4Image">
                             <img src="https://dummyimage.com/460x320/ffffff/000000" alt="">
                         </div>
-                        <div class="abonement_services_discription abonement_element_4" id="elem4Desc">
+                        <div class="abonement_services_discription element_4" id="elem4Desc">
                             <div class="abonement_services_discription_title">
                                 <h2 class="abonement_services_discription_title_title">Массаж тела</h2>
                             </div>
                             <div class="abonement_services_discription_abonements">
                                 <ul class="abonement_services_discription_abonements_list">
                                     <li><span>7</span> процедур - скидка <span>9%</span> - срок <span>4</span> месяца</li>
+                                    <li><span>7</span> процедур - скидка <span>9 %</span> - срок <span>4</span> месяца</li>
                                     <li><span>7</span> процедур - скидка <span>9 %</span> - срок <span>4</span> месяца</li>
                                 </ul>
                             </div>
@@ -266,7 +374,7 @@
                     <div class="serteficates_advantages-container">
                         <div class="advantages_unit">
                             <div class="advantages_unit_image">
-                                <img src="https://dummyimage.com/80/ffffff/000000" alt="">
+                                <img src="https://static.tildacdn.com/tild6365-3536-4539-b862-613562323236/04bdaaf8-9daa-4430-a.svg" alt="">
                             </div>
                             <div class="advantages_unit_description">
                                 <h3 class="advantages_unit_description_title">Нужный подарок</h3>
@@ -277,7 +385,7 @@
                         </div>
                         <div class="advantages_unit">
                             <div class="advantages_unit_image">
-                                <img src="https://dummyimage.com/80/ffffff/000000" alt="">
+                                <img src="https://static.tildacdn.com/tild3635-3636-4366-a332-646665363231/0a7bcff9-3cf7-43c9-8.svg" alt="">
                             </div>
                             <div class="advantages_unit_description">
                                 <h3 class="advantages_unit_description_title">Выгода</h3>
@@ -288,7 +396,7 @@
                         </div>
                         <div class="advantages_unit">
                             <div class="advantages_unit_image">
-                                <img src="https://dummyimage.com/80/ffffff/000000" alt="">
+                                <img src="https://static.tildacdn.com/tild3631-6661-4433-b132-313061326365/e6e9b7f0-cd72-4200-b.svg" alt="">
                             </div>
                             <div class="advantages_unit_description">
                                 <h3 class="advantages_unit_description_title">Все включено</h3>
@@ -302,13 +410,121 @@
             </div>
         </section>
     </main>
-    <footer class="footer-container">
-        It's footer
+    <footer class="footer">
+        <div class="footer-container_top">
+            <div class="header_bottom-header">
+                <div class="bottom-header_button">
+                    <a href="#" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container">
+                                Сертификат
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="bottom-header_middle" id="footerLogo">
+                    <div class="bottom-header_middle_logo">
+                        <a href="../index.html"><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottom-header_button">
+                    <a href="#" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container recordButton" id="recordButtonBot">
+                                Запись
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container_middle" id="socialContainer">
+            <div class="social-info-container">
+                <div class="vk-info social-info_element">
+                    <a href="" target="_blank" class="vklink"><img src="../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="whatsapp-info social-info_element">
+                    <a href="" target="_blank" class="whatsapplink"><img src="../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="avito-info social-info_element">
+                    <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                </div>
+                <div class="void-container"></div>
+            </div>
+        </div>
+        <div class="footer-container_bottom">
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list">
+                        <li class="footer_unit_list_list_element">
+                            <a href="tel://+79102004942"><img src="../images/footer/phone.png" alt="">+7 910 200-49-42</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="../index.html#map"><img src="../images/footer/location.png" alt="">г. Москва, Цветной бульвар, 26 стр. 1</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="" target="_blank" class="vklink"><img src="../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                            <a href="" target="_blank" class="whatsapplink"><img src="../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                            <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            Медицинская лицензия № ЛО-77-01-021237
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Студия эстетики "WO/MAN"</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                            <a href="#">Сертефикаты</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="./promotions.html">Акции</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="./services.html">Услуги</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="./aboutus.html">О нас</a>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                           
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../scripts/menuScript.js"></script>
     <script src="../scripts/headerScript.js"></script>
-    <script src="./scripts/socailInfoScript.js"></script>
+    <script src="../scripts/socailInfoScript.js"></script>
     <script src="../scripts/sertificates.js"></script>
+    <script src="../scripts/record.js"></script>
+    <script src="../scripts/dropdownMenu.js"></script>
 </body>
 </html> 

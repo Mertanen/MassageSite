@@ -6,11 +6,21 @@
     <meta name="robots" content="all">
     <meta name="description" content="Описание">
     <meta name="keywords" content="Ключевые слова">
+    <link rel="icon" href="https://dummyimage.com/16//fff.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/pagesStyle.css">
-    <title>Массажная студия</title> 
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="../../../styles/header.css">
+    <link rel="stylesheet" href="../../../styles/breadCrumbs.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/servicesElements.css">
+    <link rel="stylesheet" href="../../../styles/transitionButton.css">
+    <link rel="stylesheet" href="../../../styles/location.css">
+    <link rel="stylesheet" href="../../../styles/record.css">
+    <link rel="stylesheet" href="../../../styles/promotionunit.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
+    <title>Массажная студия</title>
 </head>
 <body class="body">
     <header class="header">
@@ -18,32 +28,44 @@
             <div class="header_top-header" id="topHeader">
                 <div class="location-image-container">
                     <div class="location-image">
-                        <img src="../../images/top-header/location-image.png" alt="" id="location-image">
+                        <a href="../../../index.html#location"><img src="../../../images/top-header/location.png" alt="" id="location-image"></a>
                     </div>
                 </div>
                 <div class="location">
-                    <a href="../../index.html#map" class="location_map-address">Где мы находимся?</a>
+                    <button><a href="../../../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="location_short">
+                    <button><a href="../../../index.html#location" class="location_map-address">Где мы находимся?</a></button>
+                </div>
+                <div class="top-header_middle_logo">
+                    <a href="../../../index.html"><img src="https://dummyimage.com/90x60/000000/fff.png" alt=""></a>
                 </div>
                 <div class="number-container">
-                    <a href="tel:+79102004942">8 910 200-49-42</a>
+                    <a href="tel:+79102004942"><img src="../../../images/top-header/phone.png" alt=""><span>8 910 200-49-42</span></a>
                 </div>
                 <div class="social-info-container">
                     <div class="vk-info social-info_element">
-                        <a href="" target="_blank" id="vklink"><img src="../../images/top-header/vk-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="vklink"><img src="../../../images/top-header/vk-image.svg" alt=""></a>
                     </div>
                     <div class="whatsapp-info social-info_element">
-                        <a href="" target="_blank" id="whatsapplink"><img src="../../images/top-header/whatsapp-image.svg" alt=""></a>
+                        <a href="" target="_blank" class="whatsapplink"><img src="../../../images/top-header/whatsapp-image.svg" alt=""></a>
                     </div>
                     <div class="avito-info social-info_element">
-                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" id="avitolink"><img src="../../images/top-header/avito-image.png" alt="" id="avito-image"></a>
+                        <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../../../images/top-header/avito-image.png" alt="" id="avito-image"></a>
                     </div>
-                    <div class="void-container"></div>
+                </div>
+                <div class="top-header_button_void">
+                    <button class="menu-icon" id="menu-icon-void">
+                        <span class="button-first button_element" id="button-first-void"></span>
+                        <span class="button_element"></span>
+                        <span class="button-third button_element" id="button-third-void"></span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="header_bottom-header">
             <div class="bottom-header_button">
-                <a href="" class="bottom-header_button_link button">
+                <a href="../../serteficates.html" class="bottom-header_button_link button">
                     <ul>
                         <li class="button_container">
                             Сертификат
@@ -54,28 +76,28 @@
             </div>
             <div class="bottom-header_middle">
                 <div class="bottom-header_middle_logo">
-                    <a href="../../index.html"><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
+                    <a href="../../../index.html"><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
                 </div>
                 <nav class="navigation">
                     <ul class="navigation_list">    
-                        <li class="navigation_element">
+                        <li class="navigation_element" id="nav_button">
                             <button class="menu-icon" id="menu-icon">
                                 <span class="button-first button_element" id="button-first"></span>
                                 <span class="button_element"></span>
                                 <span class="button-third button_element" id="button-third"></span> 
                             </button>
                         </li>
-                        <li class="navigation_element nav_unit"><a href="">Сертефикаты</a></li>
-                        <li class="navigation_element nav_unit"><a href="">Акции</a></li>
-                        <li class="navigation_element nav_unit active"><a href="../services.html">Услуги</a></li>
-                        <li class="navigation_element nav_unit"><a href="">О нас</a></li>
+                        <li class="navigation_element nav_unit"><a href="../../serteficates.html">Сертефикаты</a></li>
+                        <li class="navigation_element nav_unit"><a href="../../promotions.html">Акции</a></li>
+                        <li class="navigation_element nav_unit active"><a href="../../services.html">Услуги</a></li>
+                        <li class="navigation_element nav_unit"><a href="../../aboutus.html">О нас</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="bottom-header_button">
-                <a href="" class="bottom-header_button_link button">
+                <a href="#" class="bottom-header_button_link button">
                     <ul>
-                        <li class="button_container">
+                        <li class="button_container recordButton" id="recordButton">
                             Запись
                             <span></span><span></span><span></span><span></span>
                         </li>
@@ -84,30 +106,318 @@
             </div>
         </div>
     </header>
-    <section class="menu" id="menu">
+    <section class="menu menu_sticky" id="menu">
         <div class="menu-container">
             <div class="menu_container" id="menu-container">
                 <div class="menu_menu">
-                        
+                    <div class="menu_close-button-container">
+                        <button class="menu_close-button"><img src="../../../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+                    </div>
+                    <h1 class="menu_menu_main_title title2">Cтудия эстетики</h1>
+                    <div class="menu_serteficates menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="../../serteficates.html">Сертефикаты</a></div><div class="menu_unit_img-container"><img src="../../../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="../../serteficates.html#money">Сертефикаты на сумму</a></li>
+                                <li class="menu_menu_list_element"><a href="../../serteficates.html#abonements">Абонементы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_promotions menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="../../promotions.html">Акции</a></div><div class="menu_unit_img-container"><img src="../../../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                                <li class="menu_menu_list_element"><a href="">Цвет мечты или розовый фламинго</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_services menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="../../services.html">Услуги</a></div><div class="menu_unit_img-container"><img src="../../../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Массаж1</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж2</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж3</a></li>
+                                <li class="menu_menu_list_element"><a href="">Массаж4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_aboutus menu_unit">
+                        <h2 class="menu_menu_title title4"><div class="menu_unit_link-container"><a href="../../aboutus.html">О нас</a></div><div class="menu_unit_img-container"><img src="../../../images/top-header/arrow-right.png" alt=""></div></h2>
+                        <div class="menu_menu_list-container">
+                            <ul class="menu_menu_list">
+                                <li class="menu_menu_list_element"><a href="">Сертефикаты на сумму</a></li>
+                                <li class="menu_menu_list_element"><a href="">Абонементы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_menu_footer">
+                    <div class="menu_menu_footer_number"><a href="tel:+79102004942"><span>+7 910 200-49-42</span></a></div>
+                    <div class="menu_menu_footer_social-container">
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="vklink"><img src="../../../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="" target="_blank" class="whatsapplink"><img src="../../../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        <div class="menu_social-info_footer"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../../../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="record-container" id="recordContainer">
+        <div class="record_inner-container active" id="recordInnerContainer">
+            <div class="menu_close-button-container">
+                <button class="menu_close-button" id="closeButton"><img src="../../../images/top-header/close.svg" alt="" class="menu_close-button_image"></button>
+            </div>
+            <div class="record_title">
+                <h1 class="title3">Запись на прием</h1>
+            </div>
+            <div class="record_description">
+                <div class="info-content_address info-content_element">
+                    <div class="info-content_address_image info-content_image"><img src="../../../images/location/location.png" alt="" class="location_image"></div><span>г. Москва, Цветной бульвар, 26 стр. 1</span>
+                </div>
+                <div class="info-content_admission-rules info-content_element">
+                    <div class="info-content_admission-rules_image info-content_image"><img src="../../../images/location/rule.png" alt="" class="location_image"></div><span>Прием по предварительной записи</span>
+                </div>
+                <div class="info-content_reception-time info-content_element">
+                    <div class="info-content_reception-time_image info-content_image"><img src="../../../images/location/time.svg" alt="" class="location_image"></div><span>Ежедневно с 10:00 до 22:00</span>
+                </div>
+                <div class="info-content_number info-content_element">
+                    <div class="info-content_number_image info-content_image"><img src="../../../images/location/phone.png" alt="" class="location_image"></div><span><a href="tel:+79102004942">+7 (965) 142-97-30</a></span>
+                </div>
+                <div class="record_social-list-container">
+                    <ul class="record_social-list">
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>VK:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="vklink"><img src="../../../images/top-header/vk-image.svg" alt="" class="vklinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Whatsapp:</h2></div>
+                            <div class="social-list_element_descr"><a href="" target="_blank" class="whatsapplink"><img src="../../../images/top-header/whatsapp-image.svg" alt="" class="whatsapplinkmenufoo"></a></div>
+                        </li>
+                        <li class="record_social-list_element">
+                            <div class="social-list_element_title"><h2>Avito:</h2></div>
+                            <div class="social-list_element_descr"><a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../../../images/top-header/avito-image.png" alt="" class="avitolinkmenufoo"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="main-container">
         <div class="crumbs">
             <ul class="crumbs_nav">
-                <li><a href="#">Breadcrumb1</a></li>
-                <li><a href="#">Breadcrumb2</a></li>
-                <li><a href="#">Breadcrumb3</a></li>
+                <li><a href="../../../index.html">Главная</a></li>
+                <li><a href="../../services.html">Услуги</a></li>
+                <li><a href="../../massage/massage.html">Массаж</a></li>
+                <li id="breadcrumbs_active">Традиционный массаж</li>
             </ul>
         </div>
+        <section class="promotion_unit-section">
+            <div class="promotion_unit_title">
+                <h1 class="promotion_unit_title_title title1">Цвет мечты или розовый фламинго</h1>
+            </div>
+            <div class="transition_unit_buttons">
+                <div class="transition_unit_buttons-container">
+                    <div><button class="transition_unit_buttons_button active">Описание</button></div>
+                    <div><a href="#promotion_price"><button class="transition_unit_buttons_button">Стоимость</button></a></div>
+                </div>
+            </div>
+            <div class="promotion_unit-container">
+                <div class="promotion_unit_image">
+                    <img src="https://dummyimage.com/480/fff/" alt="">
+                </div>
+                <div class="promotion_unit_description">
+                    <p>
+                        Традиционный тайский массаж известен под несколькими названиями: тайский массаж, тайская йога, «нуат пэн боран» (Nuat phaen boran), пассивная йога и другие. 
+                        По своей сути этот массаж состоит из двух составляющих, умело объединенных в одно целое. 
+                        Это акупрессура – воздействие на проблемные места через давление на определённые точки тела (своего рода разновидность рефлексотерапии) и совокупность упражнений, позаимствованных из практики йогов, таких как скручивания и растяжки.
+                    </p>
+                    <p>
+                        Техника основывается на воздействии с помощью стоп, локтей, кистей. 
+                        Благодаря такому мягкому силовому, воздействию, прорабатываются глубокие мышцы и ткани нашего организма.
+                    </p>
+                        <p>
+                            Если Вы ведете сидячий и малоподвижный образ жизни, хотите снять стресс и избавиться от хронической усталости - то тайский традиционный массаж то, что Вам нужно.
+                        </p>
+                        <p>
+                            Массаж выполняется в удобной одежде, лежа на мате.
+                            Спокойная музыка, ароматерапия, свечи, доброжелательный настрой мастера все способствует гармоничному и медитативному погружению и расслаблению.
+                        </p>
+                        <p>
+                            Помимо всего вышеперечисленного Тайский массаж улучшает кровообращение, влияет на ускорение обмена веществ, снимает забитость и усталость в мышцах, увеличивает подвижность суставов, и увеличивает Вашу работоспособность.
+                            В конечном итоге традиционный тайский массаж призван привести Ваш организм в состояние равновесия за счет притока жизненных сил.
+                        </p>
+                </div>
+            </div>
+            <div class="unit_description_bottom_links promotion_button" id="recordButtonUnit">
+                    <a href="#">
+                        <button class="unit_button unit_button_gradient">
+                            Записаться
+                        </button>
+                    </a>
+                    <div class="promotion_button_serteficate"><a href="../../serteficates.html"><span>Cертефикаты</span><img src="../../../images/promotions/arrow-forward-outline.svg" alt=""></a></div>
+                </div>
+            <div class="promotion_price-list" id="promotion_price">
+                <div class="promotion_price-list_title">
+                    <h1 class="promotion_price-list_title_title title1">Стоимость</h1>
+                </div>
+                <div class="unit_description_bottom_list promotion_price-list-container">
+                    <div class="price-list-container">
+                        <ul class="bottom_list_price-list">
+                            <li class="price-list_element elem1">
+                                <div class="price-list_time">
+                                    <span>90 минут</span>
+                                </div>
+                                <div class="price-list_price">
+                                    <span>4 000Р</span>
+                                </div>
+                            </li>
+                            <li class="price-list_element elem2">
+                                <div class="price-list_time">
+                                    <span>90 минут</span>
+                                </div>
+                                <div class="price-list_price">
+                                    <span>4 000Р</span>
+                                </div>
+                            </li>
+                            <li class="price-list_element elem3">
+                                <div class="price-list_time">
+                                    <span>90 минут</span>
+                                </div>
+                                <div class="price-list_price">
+                                    <span>4 000Р</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="back_button-container">
+                <div class="unit_description_bottom_links promotion_button back_button">
+                    <button class="unit_button unit_button_gradient">
+                        <a href="../massage.html"><img src="../../../images/promotions/arrow-back-outline.svg" class="arrow-back" alt=""><span id="color_white">Вернуться</span></a>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer-container">
-        It's footer
+    <footer class="footer">
+        <div class="footer-container_top">
+            <div class="header_bottom-header">
+                <div class="bottom-header_button">
+                    <a href="../../serteficates.html" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container">
+                                Сертификат
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="bottom-header_middle" id="footerLogo">
+                    <div class="bottom-header_middle_logo">
+                        <a href="../../../index.html"><img src="https://dummyimage.com/180x100/000000/fff.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="bottom-header_button">
+                    <a href="#" class="bottom-header_button_link button">
+                        <ul>
+                            <li class="button_container recordButton" id="recordButtonBot">
+                                Запись
+                                <span></span><span></span><span></span><span></span>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container_middle" id="socialContainer">
+            <div class="social-info-container">
+                <div class="vk-info social-info_element">
+                    <a href="" target="_blank" class="vklink"><img src="../../../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="whatsapp-info social-info_element">
+                    <a href="" target="_blank" class="whatsapplink"><img src="../../../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                </div>
+                <div class="avito-info social-info_element">
+                    <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../../../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                </div>
+                <div class="void-container"></div>
+            </div>
+        </div>
+        <div class="footer-container_bottom">
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list">
+                        <li class="footer_unit_list_list_element">
+                            <a href="tel://+79102004942"><img src="../../../images/footer/phone.png" alt="">+7 910 200-49-42</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="../../../index.html#map"><img src="../../../images/footer/location.png" alt="">г. Москва, Цветной бульвар, 26 стр. 1</a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            <a href="" target="_blank" class="vklink"><img src="../../../images/footer/vk-image.png" class="footer_image" alt=""></a>
+                            <a href="" target="_blank" class="whatsapplink"><img src="../../../images/footer/whatsapp-image.png" class="footer_image" alt=""></a>
+                            <a href="https://www.avito.ru/user/8f83256e45b304080ed78a798eaf8322/profile/all?src=search_seller_info&sellerId=8f83256e45b304080ed78a798eaf8322" target="_blank" class="avitolink"><img src="../../../images/footer/avito-image.png" class="footer_image" alt="" id="footer_avito-image"></a>
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            Медицинская лицензия № ЛО-77-01-021237
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Студия эстетики "WO/MAN"</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                            <a href="../../serteficates.html">Сертефикаты</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="../../promotions.html">Акции</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="../../services.html">Услуги</a>
+                         </li>
+                         <li class="footer_unit_list_list_element">
+                             <a href="../../aboutus.html">О нас</a>
+                         </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_unit">
+                <div class="footer_unit_title">
+                    <h2 class="footer_unit_title_title title4">Контакты</h2>
+                </div>
+                <div class="footer_unit_list">
+                    <ul class="footer_unit_list_list list_dotted">
+                        <li class="footer_unit_list_list_element">
+                           
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                        <li class="footer_unit_list_list_element">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="../../scripts/menuScript.js"></script>
-    <script src="../../scripts/headerScript.js"></script>
-    <script src="../../scripts/socailInfoScript.js"></script>
+    <script src="../../../scripts/menuScript.js"></script>
+    <script src="../../../scripts/headerScript.js"></script>
+    <script src="../../../scripts/socailInfoScript.js"></script>
+    <script src="../../../scripts/menuScript.js"></script>
+    <script src="../../../scripts/record.js"></script>
+    <script src="../../../scripts/dropdownMenu.js"></script>
 </body>
 </html>

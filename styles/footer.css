@@ -1,12 +1,140 @@
 /* ------- Footer --------*/
+.footer {
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    margin-top: 3em;
+}
 
-.footer-container {
-    height: 300px;
+.footer-container_top {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.footer-container_middle {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.footer-container_bottom {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 1em;
+    gap: 50px;
+    color: var(--footer-color);
+}
+
+.footer_unit {
+    margin-top: 3em;
+}
+
+.footer .bottom-header_middle {
+    margin-bottom: 1em;
+}
+
+
+.footer_unit_title {
+    margin-bottom: 1.5em;
+    color: var(--footer-title-color);
+}
+
+.footer_unit_title_title {
+    position: relative;
+    text-align: start;
+    width: fit-content;
+    padding-bottom: 0.5em;
+}
+
+.footer_unit_title_title::after {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+    z-index: 2;
+    background-color: black;
+}
+
+.footer_unit_list_list_element {
+    display: flex;
     align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.footer_unit_list_list_element a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: var(--footer-color);
+}
+
+.footer_unit_list_list_element a:hover {
+    color: var(--footer-a-hover);
+}
+
+.footer_unit_list_list_element img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
+}
+
+.footer_image {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 1em;
+}
+
+#footer_avito-image {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 27px !important;
+    height: 27px !important;
+}
+
+.list_dotted li {
+    border-bottom: 1px dotted black;
+    padding-bottom: 1em;
+}
+
+.list_dotted li:last-child {
+    border: none;
+}
+
+@media screen and (width <= 960px) {
+    .footer {
+        padding-bottom: 1em;
+    }
+    .footer-container_bottom {
+        display: none;
+    }
+    .footer-container_top {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (width <= 760px) {
+    .footer .header_bottom-header {
+        display: block;
+    }
+    .footer .header_bottom-header .bottom-header_button {
+        display: none;
+    }
+    .footer .header_bottom-header #footerLogo {
+        display: flex;
+    }
+    .footer  #socialContainer {
+        display: block;
+    }
+    .footer .social-info-container {
+        display: flex;
+    }
 }

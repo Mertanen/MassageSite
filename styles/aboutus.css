@@ -1,0 +1,164 @@
+/* ----- Aboutus ----- */
+
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.transition_unit_buttons {
+    margin: 1.5em auto !important;
+}
+
+.aboutus_main_title {
+    margin: 3em 0 2em 0 !important;
+}
+
+.aboutus_description h1 {
+    text-align: start;
+    line-height: 1.3;
+}
+
+.aboutus_description p {
+    font-size: 18px;
+}
+
+.aboutus_values h1{
+    text-align: start;
+    margin: 0 auto;
+}
+
+.aboutus_value-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 1em;
+    row-gap: 4em;
+    justify-content: space-between;
+}
+
+.aboutus_unit {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus_unit_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutus_unit_description h1 {
+    margin: 2em 0 0 0;
+}
+
+.aboutus_standats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 5em;
+}
+
+.aboutus_standats_description h2 {
+    text-align: start;
+}
+
+.jur-information-container {
+    max-width: 1200px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.jur-information_title {
+    text-align: start;
+    margin: 2.5em 0 1em 0 !important;
+}
+
+.jur-information_list li {
+    padding: 1em 0;
+    border-top: 1px solid var(--color-text);
+}
+.jur-information_list:last-child {
+    border-bottom: 1px solid var(--color-text);
+}
+
+.jur-information_item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+@media screen  and (width <= 1200px) {
+    .aboutus-container {
+        max-width: 920px;
+    }
+    .aboutus_unit {
+        flex: 0 0 45%;
+    }
+    .aboutus_standats {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .jur-information_name {
+        width: max-content;
+        text-align: center;
+    }
+    .jur-information_title {
+        text-align: center;
+    }
+    .aboutus_standats_description h2 {
+        text-align: center;
+    }
+    .aboutus_values h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (width <= 1000px) {
+    .aboutus-container {
+        max-width: 720px;
+    }
+    .aboutus_value-container {
+        justify-content: center;
+    }
+    .aboutus_unit {
+        flex: 0 0 60%;
+    }
+    .aboutus_main_title {
+        text-align: center !important;
+    }
+    .aboutus_standats_description h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (width <= 760px) {
+    .aboutus-container {
+        max-width: 440px;
+    }
+    .aboutus_unit {
+        flex: 0 0 80%;
+    }
+    .jur-information_item {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
+}
+
+@media screen and (width <= 480px) { 
+    .aboutus_unit {
+        flex: 0 0 100%;
+    }
+    .aboutus-section {
+        padding: 0 0.4em    ;
+    }
+}

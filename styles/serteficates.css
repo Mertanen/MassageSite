@@ -1,6 +1,7 @@
 /* ------ Serteficates ------- */
 .serteficates-container {
     max-width: 1200px;
+    margin-top: 2em;
 }
 
 .serteficate-container > * {
@@ -69,6 +70,10 @@
     padding: 40px;
 }
 
+.serteficates_abonement_list span {
+    border: none !important;
+}
+
 /*  ----- Serteficates money ----- */
 
 .serteficates_money_unit-container {
@@ -86,6 +91,10 @@
     background: rgb(253, 183, 183) ;
     border-radius: 20px;
     --border-width: 2px;
+}
+
+.serteficates_money_unit_image img {
+    width: 235px;
 }
 
 .serteficates_money_unit::after {
@@ -168,7 +177,9 @@
 
 .abonement_list_button.active {
     color: var(--button-gradient-color);
-    background: var(--nav-active-bg-color)
+    background: var(--nav-active-bg-color);
+    font-weight: bold;
+    transition: 0s;
 }
 
 /* -- Sertefications abonement services -- */
@@ -215,6 +226,10 @@
     border-radius: 0.5em;
 }
 
+.abonement_services_discription_abonements_list :last-child {
+    margin-bottom: 0;
+}
+
 .abonement_services_discription_abonements_list li span {
     font-weight: 900;
 }
@@ -249,6 +264,11 @@
     height: fit-content;
 }
 
+.advantages_unit_image img {
+    width: 75px;
+    height: 75px;
+}
+
 .advantages_unit_description {
     display: flex;
     flex-direction: column;
@@ -267,4 +287,93 @@
 
 .advantages_unit_description_description {
     padding-top: 1em;
+}
+
+@media screen and (width <= 1200px) {
+    .serteficates-container {
+        max-width: 990px;
+    }
+    .serteficates_abonement_list {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (width <= 1000px) {
+    .serteficates-container {
+        max-width: 750px;
+    }
+    .serteficates_money_unit-container {
+        overflow-x: scroll;
+        padding: 0.2em;
+        gap: 1em;
+    }
+    .serteficates_abonement_services {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .abonement_services_discription_title_title {
+        font-size: 0.8em;
+    }
+    .abonement_services_image {
+        text-align: center;
+    }
+    .serteficates_abonement_list span {
+        margin: 0 40px;
+    }
+    .serteficates_abonement_list {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (width <= 760px) {
+    .serteficates-container {
+        max-width: 430px;
+    }
+    .serteficates_title_center_title {
+        font-size: 55px;
+    }
+    .serteficates_description_center {
+        width: 100%;
+    }
+    .serteficates_description_center_description {
+        padding: 1em;
+    }
+    .sertificates_title_title {
+        font-size: 1.5em;
+    }
+    .serteficates_money_unit-container {
+        overflow-x: scroll;
+        padding: 0.2em;
+        gap: 1em;
+    }
+    .serteficates_abonement_services {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .abonement_services_discription_title_title {
+        font-size: 0.6em;
+    }
+    .abonement_services_image {
+        text-align: center;
+    }
+    .abonement_services_image img {
+        width: 420px;
+        height: 280px;
+    }
+}
+
+@media screen and (width <= 480px) {
+    .serteficates-container {
+        max-width: 350px;
+    }
+    .serteficates_title_center_title {
+        font-size: 45px;
+    }
+    .serteficates_description_center_description {
+        padding: 0.5em;
+    }
+    .abonement_services_image img {
+        width: 350px;
+        height: 220px;
+    }
 }
